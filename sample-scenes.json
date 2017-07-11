@@ -1,0 +1,49 @@
+{ "scenes":
+  [
+    {
+      "id": 1,
+      "setting": "The Woods",
+      "description": "Some facts about the woods which prompt user action.",
+      "options": [
+        [
+          2,
+          "Go to City"
+        ],
+        [
+          3,
+          "Go, ill-advisedly, to Space."
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "setting": "The City",
+      "description": "Some facts about the city which prompt user action.",
+      "options": [
+        [
+          1,
+          "Go to Woods"
+        ],
+        [
+          3,
+          "Go, ill-advisedly, to Space."
+        ]
+      ]
+    },
+    {
+      "id": 3,
+      "setting": "Space",
+      "description": "Some facts about the space which prompt user action.",
+      "options": [
+        [
+          2,
+          "Get outta space! To City!"
+        ],
+        [
+          1,
+          "Go back to Woods."
+        ]
+      ]
+    }
+  ]
+}

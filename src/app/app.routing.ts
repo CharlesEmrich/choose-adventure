@@ -10,7 +10,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'scenes/:id',
-    component: SceneComponent
+    component: CharacterComponent
   }
 ];
 

@@ -6,3 +6,5 @@
     <li *ngFor="let option of sceneToDisplay.options" (click)="goToScene(option[0])">{{option[1]}}</li>
   </ul>
 </div>
+
+<div *ngFor="let scene of scenes | async">{{scene.setting}}</div> 
