@@ -1,0 +1,22 @@
+<div *ngIf="!characterCreated">
+  <label>Enter your Name:</label>
+  <input #newName value="Jimothy">
+  <label>Enter your Age:</label>
+  <input #newAge value="14">
+  <label>Pineapple on Pizza?</label>
+  <select #newPineapple>
+    <option [value]="true">Heck yes, Pineapple goes on pizza!</option>
+    <option [value]="false">Are you insane?!</option>
+  </select>
+  <button (click)="submitForm(
+  newName.value,
+  newAge.value,
+  newPineapple.value
+  ); newName.value='';
+  newAge.value='';
+  newPineapple.value='';">Go Forth and Adventure!</button>
+</div>
+<div *ngIf="characterCreated">
+  <h4>{{character.name}}</h4>
+  <span>Age: {{character.age}}</span> <span>{{character.pineapple}}</span>
+</div>
