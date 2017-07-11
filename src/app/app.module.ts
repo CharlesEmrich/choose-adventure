@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { masterFirebaseConfig } from './api-keys';
 import { CharacterComponent } from './character/character.component';
 import { SceneComponent } from './scene/scene.component';
+import { routing } from './app.routing';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
