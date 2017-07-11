@@ -5,8 +5,12 @@ import { SceneComponent } from './scene/scene.component';
 
 const appRoutes: Routes = [
   {
-  path: 'scenes/:id',
-  component: SceneComponent
+    path: '',
+    component: CharacterComponent
+  },
+  {
+    path: 'scenes/:id',
+    component: SceneComponent
   }
 ];
 

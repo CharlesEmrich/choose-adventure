@@ -1,7 +1,8 @@
 <div>
-  <h1>{{scene.setting}}</h1>
-  <p>{{scene.description}}</p>
+  <h1>{{sceneId}}</h1>
+  <h1>{{sceneToDisplay.setting}}</h1>
+  <p>{{sceneToDisplay.description}}</p>
   <ul>
-    <li *ngFor="let option of scene.options" (click)="goToScene(option[0])">{{option[1]}}</li>
+    <li *ngFor="let option of sceneToDisplay.options" (click)="goToScene(option[0])">{{option[1]}}</li>
   </ul>
 </div>
